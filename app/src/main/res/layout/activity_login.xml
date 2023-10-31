@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
+
     <RelativeLayout
         android:id="@+id/halaman_awal"
         android:layout_width="417dp"
@@ -99,7 +100,7 @@ Tenang, Kami Ada Solusinya."
             app:srcCompat="@drawable/kotakputih" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/emaillogin"
             android:layout_width="309dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -130,7 +131,7 @@ Tenang, Kami Ada Solusinya."
             app:srcCompat="@drawable/kotakputih" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/passwordlogin"
             android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -168,6 +169,7 @@ Tenang, Kami Ada Solusinya."
             android:layout_marginEnd="82dp"
             android:layout_marginBottom="101dp"
             android:text="Login Sekarang"
+            android:textSize="17dp"
             android:textColor="#FFC736"
             app:iconTint="#134096"
             app:rippleColor="#134096"
@@ -176,7 +178,7 @@ Tenang, Kami Ada Solusinya."
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonkesignup"
             android:layout_width="113dp"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
@@ -191,7 +193,8 @@ Tenang, Kami Ada Solusinya."
             app:iconTint="#134096"
             app:rippleColor="#134096"
             app:strokeColor="#134096"
-            tools:ignore="TextSizeCheck" />
+            tools:ignore="TextSizeCheck"
+            android:onClick="pindahkesignup"/>
 
 
     </RelativeLayout>

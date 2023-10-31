@@ -4,6 +4,7 @@
         <item>@font/amiko_bold</item>
         <item>@font/archivo_bold</item>
         <item>@font/bebas_neue</item>
+        <item>@font/poppins_bold</item>
         <item>@font/poppins_thin</item>
     </array>
 </resources>
