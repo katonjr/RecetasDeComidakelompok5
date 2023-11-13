@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814830329441",
+    "project_id": "recetasdecomida-12079",
+    "storage_bucket": "recetasdecomida-12079.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814830329441:android:400b028c2d8dda41f7d420",
+        "android_client_info": {
+          "package_name": "com.example.recetasdecomida"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg1zWJK48VJo8dUD8US_IpBEFy1OzRvxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
