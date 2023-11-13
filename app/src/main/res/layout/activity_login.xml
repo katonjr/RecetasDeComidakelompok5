@@ -14,10 +14,10 @@
         android:background="#FFC736"
         android:clipToOutline="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
 
         <TextView
@@ -27,7 +27,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/bebas_neue"
@@ -115,8 +115,7 @@ Tenang, Kami Ada Solusinya."
             android:inputType="textEmailAddress"
             android:textColor="#134096"
             android:textColorHighlight="#134096"
-            android:textColorHint="#134096"
-            />
+            android:textColorHint="#134096" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -169,8 +168,8 @@ Tenang, Kami Ada Solusinya."
             android:layout_marginEnd="82dp"
             android:layout_marginBottom="101dp"
             android:text="Login Sekarang"
-            android:textSize="17dp"
             android:textColor="#FFC736"
+            android:textSize="17dp"
             app:iconTint="#134096"
             app:rippleColor="#134096"
             app:strokeColor="#134096"
@@ -187,14 +186,14 @@ Tenang, Kami Ada Solusinya."
             android:layout_marginStart="219dp"
             android:layout_marginEnd="85dp"
             android:layout_marginBottom="64dp"
+            android:onClick="pindahkesignup"
             android:text="Daftar Disini"
             android:textColor="#FFC736"
             android:textSize="10dp"
             app:iconTint="#134096"
             app:rippleColor="#134096"
             app:strokeColor="#134096"
-            tools:ignore="TextSizeCheck"
-            android:onClick="pindahkesignup"/>
+            tools:ignore="TextSizeCheck" />
 
 
     </RelativeLayout>

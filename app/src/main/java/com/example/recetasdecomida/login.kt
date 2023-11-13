@@ -12,8 +12,10 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         var signin: Button=findViewById(R.id.buttonkesignup)
-        signin.setOnClickListener({val intent = Intent(this, signup::class.java)
-            startActivity(intent)})
+        signin.setOnClickListener {
+            val intent = Intent(this, signup::class.java)
+            startActivity(intent)
+        }
 
     }
 }
