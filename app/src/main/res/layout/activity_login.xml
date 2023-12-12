@@ -30,7 +30,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
-            android:fontFamily="@font/bebas_neue"
+            android:fontFamily="@font/poppins_thin"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="-21sp"
             android:text="Recetas De Comida"
@@ -68,7 +68,8 @@
             android:text=" Sebelum Lanjut, Login Dulu Yuk ^^"
             android:textAlignment="center"
             android:textColor="#134096"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            tools:ignore="TextSizeCheck" />
 
         <TextView
             android:id="@+id/textView5"
@@ -85,7 +86,8 @@
 Tenang, Kami Ada Solusinya."
             android:textAlignment="center"
             android:textColor="#134096"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:ignore="TextSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -174,12 +176,12 @@ Tenang, Kami Ada Solusinya."
             app:rippleColor="#134096"
             app:strokeColor="#134096"
 
-            />
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/buttonkesignup"
             android:layout_width="113dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"

@@ -13,7 +13,7 @@ class login : AppCompatActivity() {
     lateinit var editEmail: EditText
     lateinit var editPassword: EditText
     lateinit var btnLogin: Button
-    lateinit var  firebase: FirebaseAuth
+    lateinit var firebase: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

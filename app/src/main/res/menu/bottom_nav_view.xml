@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/Home"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/bookmark"
+        android:title="@string/Bookmark"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_bookmark_24"/>
+    <item
+        android:id="@+id/search"
+        android:title="@string/Search"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item
+        android:id="@+id/addrecipe"
+        android:title="@string/Add_recipe"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_library_books_24"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="@string/Account"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_account_circle_24"/>
+
+</menu>
