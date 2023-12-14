@@ -16,31 +16,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints,UselessParent">
 
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="104dp"
-            android:layout_height="76dp"
-            android:layout_alignParentStart="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="51dp"
-            android:layout_marginBottom="240dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="167dp"
             app:srcCompat="@drawable/kotakputih" />
 
-        <TextView
-            android:id="@+id/recetasdecomida"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/kotakbiru"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center_horizontal|center_vertical"
-            android:lineSpacingExtra="-21sp"
-            android:text="Recetas De Comida"
-            android:textColor="#FFC736"
-            android:textSize="24sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="99dp"
+            app:srcCompat="@drawable/kotakputih" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="235dp"
+            app:srcCompat="@drawable/kotakputih" />
 
         <TextView
             android:id="@+id/rekomendasi_makanan"
@@ -58,6 +71,23 @@
             android:text="Rekomendasi Makanan"
             android:textColor="#134096"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bahanApa"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="411dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="-21sp"
+            android:text="Bahan apa yang ingin kamu masak?"
+            android:textColor="#134096"
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -120,7 +150,5 @@
 
     </RelativeLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

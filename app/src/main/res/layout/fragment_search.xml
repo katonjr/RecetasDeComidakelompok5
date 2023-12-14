@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:id="@+id/halaman_awal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_width="417dp"
+        android:layout_height="737dp"
+        android:background="#FFC736"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints,UselessParent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="587dp"
+            android:background="@drawable/baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="573dp"
+            app:srcCompat="@drawable/kotakputih" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="403dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="369dp"
+            app:srcCompat="@drawable/kotakbiru" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="403dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="205dp"
+            app:srcCompat="@drawable/kotakbiru" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="403dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="287dp"
+            app:srcCompat="@drawable/kotakbiru" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="403dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="453dp"
+            app:srcCompat="@drawable/kotakbiru" />
+
+        <TextView
+            android:id="@+id/carResep"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="-21sp"
+            android:text="Cari Resep"
+            android:textColor="#134096"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/masakApa"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="-21sp"
+            android:text="Mau masak apa hari ini?"
+            android:textColor="#ACACAC"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>
