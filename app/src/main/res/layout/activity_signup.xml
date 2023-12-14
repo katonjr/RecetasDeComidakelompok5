@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup">
+    tools:context=".login">
 
     <RelativeLayout
-        android:id="@+id/halaman_awa"
+        android:id="@+id/halaman_awal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFC736"
@@ -90,34 +90,33 @@
             app:srcCompat="@drawable/kotakputih" />
 
         <Button
-            android:id="@+id/buttonsignup"
+            android:id="@+id/buttonlogin"
             android:layout_width="261dp"
             android:layout_height="65dp"
-            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="69dp"
-            android:layout_marginEnd="81dp"
-            android:layout_marginBottom="102dp"
-            android:text="Daftar Sekarang"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="101dp"
+            android:text="Login Sekarang"
             android:textColor="#FFC736"
             android:textSize="17dp"
             app:iconTint="#134096"
             app:rippleColor="#134096"
-            app:strokeColor="#134096" />
+            app:strokeColor="#134096"
+            tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/buttonkelogin"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:id="@+id/buttonkesignup"
+            android:layout_width="113dp"
+            android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="213dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginBottom="52dp"
-            android:onClick="pindahkelogin"
-            android:text="Login Disini"
+            android:layout_marginStart="219dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="64dp"
+            android:onClick="pindahkesignup"
+            android:text="Daftar Disini"
             android:textColor="#FFC736"
             android:textSize="10dp"
             app:iconTint="#134096"
@@ -127,14 +126,14 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_width="167dp"
+            android:layout_height="33dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="58dp"
-            android:layout_marginEnd="166dp"
-            android:layout_marginBottom="67dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="64dp"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
             android:text=" Sudah Punya Akun? "

@@ -7,35 +7,38 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private var bottomNavigationView: BottomNavigationView? = null
+    private lateinit var bottomNavigationView: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView)
-        bottomNavigationView.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item: MenuItem ->
-            onNavigationItemSelected(
-                item
-            )
-        })
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            onNavigationItemSelected(item)
+        }
         if (savedInstanceState == null) {
             bottomNavigationView.setSelectedItemId(R.id.home)
         }
     }
 
-    fun onNavigationItemSelected(item: MenuItem): Boolean {
-        var selectedFragment: Fragment? = null
-        when (item.itemId) {
-            R.id.home -> selectedFragment = HomeFragment()
-            R.id.bookmark -> selectedFragment = BookmarkFragment()
-            R.id.search -> selectedFragment = SearchFragment()
-            R.id.addrecipe -> selectedFragment = AddRecipeFragment()
-            R.id.account -> selectedFragment = AccountFragment()
+    private fun onNavigationItemSelected(item: MenuItem): Boolean {
+        val selectedFragment: Fragment = when (item.itemId) {
+            R.id.home -> HomeFragment()
+            R.id.bookmark -> BookmarkFragment()
+            R.id.search -> SearchFragment()
+            R.id.addrecipe -> AddRecipeFragment()
+            R.id.account -> AccountFragment()
+            else -> HomeFragment() // Default fragment, bisa diubah sesuai kebutuhan
         }
-        if (selectedFragment != null) {
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.flFragment, selectedFragment)
-            transaction.commit()
+
+        return loadFragment(selectedFragment)
+    }
+
+    private fun loadFragment(fragment: Fragment): Boolean {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment, fragment)
+            commit()
         }
         return true
     }

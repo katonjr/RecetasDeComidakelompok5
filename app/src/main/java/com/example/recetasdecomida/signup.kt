@@ -22,7 +22,7 @@ class signup : AppCompatActivity() {
         firebase = FirebaseAuth.getInstance()
         editEmail = findViewById(R.id.emailsignup)
         editPassword = findViewById(R.id.passwordsignup)
-        btnSignup = findViewById(R.id.buttonsignup)
+        btnSignup = findViewById(R.id.buttonkesignup)
 
 
 
@@ -44,7 +44,7 @@ class signup : AppCompatActivity() {
 
 
 
-        var loginn: Button =findViewById(R.id.buttonkelogin)
+        var loginn: Button =findViewById(R.id.buttonlogin)
         loginn.setOnClickListener({val intent = Intent(this, login::class.java)
             startActivity(intent)})
     }
