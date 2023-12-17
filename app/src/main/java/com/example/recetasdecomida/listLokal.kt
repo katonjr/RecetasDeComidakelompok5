@@ -1,7 +1,7 @@
 package com.example.recetasdecomida
 
 val listRekomendasi: List<isiresep> = listOf(
-    isiresep(),
+    isiresep("https://cdn.idntimes.com/content-images/community/2022/04/resep-rendang-filosofi-rendang-makna-rendang-arti-rendang-rendang-dari-mana-makanan-indonesia-filosofi-9cde86371d7fc78c91ae80a6ffab250e-e0b9344da253b8e653bd42c7df03d6d9.jpg"),
     isiresep(),
     isiresep(),
     isiresep(),

@@ -47,21 +47,64 @@
         android:layout_height="23dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="SOTO AYAM MAK NYAK"
+        android:text="SOTO AYAM BUNDA EVI"
         android:textColor="#134096"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/imageView21"
         app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="334dp"
-        android:layout_height="360dp"
-        android:layout_marginTop="24dp"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="335dp"
+        android:layout_height="369dp"
+        android:layout_marginBottom="32dp"
+        android:text="1/2 ekor ayam kampung, potong dua
+1.5 liter air
+3 sdm minyak sayur
+1 batang serai, memarkan
+2 lembar daun salam
+2 lembar daun jeruk
+Bumbu Halus:
+5 butir bawang putih
+3 siung bawang merah
+4 butir kemiri
+3 cm kunyit
+1 cm jahe
+1/2 sdt merica butiran
+2 sdt garam
+Pelengkap:
+100 g tauge
+100 g suun, seduh air panas
+2 butir telur rebus
+2 sdm daun bawang
+4 sdm bawang merah goreng
+4 sdm sambal rawit
+2 butir jeruk nipis, potong-potong
+Cara Membuat :
+Didihkan air, rebus ayam dengan api kecil hingga daging ayam hampir lunak.
+Tumis bumbu halus bersama daun jeruk, daun salam, serai dan aduk hingga matang dan harum. Angkat.
+Masukkan ke dalam rebusan ayam.
+Rebus dengan api kecil hingga daging ayam lunak.
+Angkat ayam, tiriskan hingga agak kering.
+Goreng ayam sebentar hingga bagian luarnya kering. Tiriskan.
+Suwir daging ayam kasar-kasar.
+Susun ayam, suun, tauge dalam mangkuk saji.
+Tuangi kaldu panas.
+Sajikan dengan daun bawang, bawang goreng, sambal rawit dan jeruk nipis."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/imageView21"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/imageView21" />
+
+    <Button
+        android:id="@+id/buttonsimpan"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:text="Simpan Resep"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
