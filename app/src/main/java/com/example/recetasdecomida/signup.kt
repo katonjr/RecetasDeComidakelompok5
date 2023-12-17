@@ -37,6 +37,8 @@ class signup : AppCompatActivity() {
             ).addOnSuccessListener {
                 val intent = Intent(this,login::class.java)
                 startActivity(intent)
+            }.addOnFailureListener {
+                Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
             }
         }
 

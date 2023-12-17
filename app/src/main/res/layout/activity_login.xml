@@ -9,18 +9,19 @@
 
     <RelativeLayout
         android:id="@+id/halaman_awal"
-        android:layout_width="417dp"
-        android:layout_height="737dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="#FFC736"
         android:clipToOutline="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
 
-        <TextView
+
+    <TextView
             android:id="@+id/recetasdecomida"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
@@ -39,19 +40,20 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="197dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="197dp"
-            android:layout_marginBottom="71dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="52dp"
             android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
             android:text=" Belum Punya Akun? "
             android:textAlignment="center"
             android:textColor="#134096"
-            android:textSize="13dp"
+            android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
 
         <TextView
@@ -163,31 +165,31 @@ Tenang, Kami Ada Solusinya."
 
         <Button
             android:id="@+id/buttonkelogin"
-            android:layout_width="261dp"
-            android:layout_height="65dp"
+            android:layout_width="288dp"
+            android:layout_height="67dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="82dp"
-            android:layout_marginBottom="101dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="99dp"
             android:text="Login Sekarang"
             android:textColor="#FFC736"
             android:textSize="17dp"
             app:iconTint="#134096"
             app:rippleColor="#134096"
             app:strokeColor="#134096"
-
             tools:ignore="TextSizeCheck" />
-
         <Button
             android:id="@+id/buttonkesignup"
-            android:layout_width="113dp"
-            android:layout_height="48dp"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="219dp"
-            android:layout_marginEnd="85dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginStart="223dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="54dp"
             android:onClick="pindahkesignup"
             android:text="Daftar Disini"
             android:textColor="#FFC736"
