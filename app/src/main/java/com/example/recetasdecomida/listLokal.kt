@@ -15,6 +15,8 @@ val listRekomendasi: List<isiresep> = listOf(
     "Opor Ayam"),
     isiresep("https://cdn-brilio-net.akamaized.net/news/2022/03/09/224600/1686675-resep-sosis-bakar.jpg",
     "Sosis Bakar"),
+    isiresep("https://asset-2.tstatic.net/palembang/foto/bank/images/ayam-goreng.jpg",
+        "Ayam Goreng"),
 )
 
 val listBahan:List<DataBahan> = listOf(
