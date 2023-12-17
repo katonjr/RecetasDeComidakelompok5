@@ -21,7 +21,7 @@ class login : AppCompatActivity() {
         firebase = FirebaseAuth.getInstance()
         editEmail = findViewById(R.id.emaillogin)
         editPassword = findViewById(R.id.passwordlogin)
-        btnLogin = findViewById(R.id.buttonkelogin)
+        btnLogin = findViewById(R.id.buttonmasuk)
 
         btnLogin.setOnClickListener {
             val getEmail = editEmail.text.toString()

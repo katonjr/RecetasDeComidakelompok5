@@ -90,7 +90,7 @@
             app:srcCompat="@drawable/kotakputih" />
 
         <Button
-            android:id="@+id/buttonlogin"
+            android:id="@+id/buttonsimpanakun"
             android:layout_width="288dp"
             android:layout_height="67dp"
             android:layout_alignParentStart="true"
@@ -108,7 +108,7 @@
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/buttonkesignup"
+            android:id="@+id/buttonkelogin"
             android:layout_width="129dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
