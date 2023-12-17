@@ -1,5 +1,6 @@
 package com.example.recetasdecomida
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,8 +9,9 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
-class AdapterRekomendasi (val list:List<isiresep>, val fragment: FragmentManager): RecyclerView.Adapter<AdapterRekomendasi.RekomendasiViewHolder>(){
+class AdapterRekomendasi (val list:List<isiresep>, val fragment: FragmentManager,val konteks: Context): RecyclerView.Adapter<AdapterRekomendasi.RekomendasiViewHolder>(){
 
     class RekomendasiViewHolder(baris: View): RecyclerView.ViewHolder(baris){
         val layout = baris.findViewById<ConstraintLayout>(R.id.rekom)
@@ -29,6 +31,10 @@ class AdapterRekomendasi (val list:List<isiresep>, val fragment: FragmentManager
 
     override fun onBindViewHolder(holder: RekomendasiViewHolder, position: Int) {
         val bind = list[position]
+
+        Glide.with(konteks).load(bind.gambar).placeholder(R.drawable.ic_launcher_foreground).into(holder.gambarmakanan2)
+
+        holder.namamakanan2.text = bind.namaMakanan
 
 
 

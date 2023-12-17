@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         recyclerbahan = view.findViewById(R.id.bahanmasakan)
 
         recylerrekomendasi.layoutManager = LinearLayoutManager(requireContext())
-        recylerrekomendasi.adapter = AdapterRekomendasi(listRekomendasi,requireActivity().supportFragmentManager)
+        recylerrekomendasi.adapter = AdapterRekomendasi(listRekomendasi,requireActivity().supportFragmentManager,requireContext())
         recyclerbahan.layoutManager= GridLayoutManager(requireContext(),4)
         recyclerbahan.adapter = AdapterBahan(listBahan,requireContext())
     }

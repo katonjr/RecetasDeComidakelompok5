@@ -1,6 +1,8 @@
 package com.example.recetasdecomida
 
-data class isiresep(val namaMakanan: String = "Soto Ayam",
+data class isiresep(
+    val gambar: String = "",
+    val namaMakanan: String = "Soto Ayam",
     val deskripsi: String = "Soto Ayam Enak Nikmat",
     val bahan: List<String> = listOf("1/2 ekor ayam kampung, potong dua","Air","garam","daun jeruk dan salam","1 batang serai"
             ),

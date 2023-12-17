@@ -1,12 +1,20 @@
 package com.example.recetasdecomida
 
 val listRekomendasi: List<isiresep> = listOf(
-    isiresep("https://cdn.idntimes.com/content-images/community/2022/04/resep-rendang-filosofi-rendang-makna-rendang-arti-rendang-rendang-dari-mana-makanan-indonesia-filosofi-9cde86371d7fc78c91ae80a6ffab250e-e0b9344da253b8e653bd42c7df03d6d9.jpg"),
-    isiresep(),
-    isiresep(),
-    isiresep(),
-    isiresep(),
-    isiresep(),
+    isiresep("https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/07/17043644/Praktis-dan-Simpel-Ini-Resep-Soto-Ayam-Lamongan-yang-Menggugah-Selera-.jpg.webp",
+        "Soto Ayam"),
+    isiresep("https://cdn.idntimes.com/content-images/community/2022/04/resep-rendang-filosofi-rendang-makna-rendang-arti-rendang-rendang-dari-mana-makanan-indonesia-filosofi-9cde86371d7fc78c91ae80a6ffab250e-e0b9344da253b8e653bd42c7df03d6d9.jpg",
+    "Rendang"),
+    isiresep("https://upload.wikimedia.org/wikipedia/commons/a/ad/Sate_Ponorogo.jpg",
+    "Sate Ayam"),
+    isiresep("https://awsimages.detik.net.id/community/media/visual/2022/04/20/resep-gurame-bakar-bumbu-kecap-cabe_43.jpeg?w=1200",
+    "Ikan Bakar"),
+    isiresep("https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/07/25041221/ini-resep-kuah-bakso-sap-yang-mudah-dibuat-di-rumah.jpg",
+    "Bakso"),
+    isiresep("https://images.tokopedia.net/img/JFrBQq/2022/8/11/6c37004f-bd32-4af6-aec4-576c14d47fad.jpg",
+    "Opor Ayam"),
+    isiresep("https://cdn-brilio-net.akamaized.net/news/2022/03/09/224600/1686675-resep-sosis-bakar.jpg",
+    "Sosis Bakar"),
 )
 
 val listBahan:List<DataBahan> = listOf(
