@@ -20,25 +20,6 @@
 
 
         <TextView
-            android:id="@+id/myaccount"
-            android:layout_width="417dp"
-            android:layout_height="wrap_content"
-
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="-10dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="9dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center_horizontal|center_vertical"
-            android:lineSpacingExtra="-21sp"
-
-            android:text="AKUN@gmail.com"
-            android:textColor="#134096"
-            android:textSize="20sp" />
-
-        <TextView
             android:id="@+id/myaccount3"
             android:layout_width="417dp"
             android:layout_height="wrap_content"

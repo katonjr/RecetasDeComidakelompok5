@@ -14,9 +14,7 @@
         android:theme="@style/Theme.RecetasDeComida"
         tools:targetApi="31">
 
-        <activity
-            android:name=".ActivityImageUpload"
-            android:exported="false" />
+
         <activity
             android:name=".signup"
             android:exported="false" />

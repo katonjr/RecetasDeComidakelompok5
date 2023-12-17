@@ -35,6 +35,6 @@ class HomeFragment : Fragment() {
         recylerrekomendasi.layoutManager = LinearLayoutManager(requireContext())
         recylerrekomendasi.adapter = AdapterRekomendasi(listRekomendasi)
         recyclerbahan.layoutManager= GridLayoutManager(requireContext(),4)
-        recyclerbahan.adapter = AdapterBahan(listBahan)
+        recyclerbahan.adapter = AdapterBahan(listBahan,requireContext())
     }
 }
