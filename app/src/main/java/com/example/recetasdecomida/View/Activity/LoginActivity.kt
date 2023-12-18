@@ -1,4 +1,4 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.View.Activity
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.recetasdecomida.R
 import com.google.firebase.auth.FirebaseAuth
 
-class login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     lateinit var editEmail: EditText
     lateinit var editPassword: EditText
     lateinit var btnLogin: Button
@@ -19,7 +20,7 @@ class login : AppCompatActivity() {
         super.onStart()
         //Membuat login sekali dan mengarahkan ke home
         if (firebase.currentUser != null)
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +43,7 @@ class login : AppCompatActivity() {
             }
             firebase.signInWithEmailAndPassword(getEmail,getPassword).addOnSuccessListener {
                 Toast.makeText(this, "Berhasil Login", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this,MainActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
 
@@ -55,7 +56,7 @@ class login : AppCompatActivity() {
 
         var signin: Button=findViewById(R.id.buttonkesignup)
         signin.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 

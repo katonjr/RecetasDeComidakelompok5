@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddRecipeFragment">
+    tools:context=".View.Fragment.AddRecipeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/halaman_awal"
@@ -25,7 +25,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="68dp"
             android:fontFamily="@font/poppins_semibold"
-            android:gravity="left_horizontal|center_vertical"
             android:lineSpacingExtra="-21sp"
             android:text="Upload catatan resep pribadi"
             android:textColor="#134096"

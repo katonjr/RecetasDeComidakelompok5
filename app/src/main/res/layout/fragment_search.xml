@@ -4,42 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchFragment">
+    tools:context=".View.Fragment.SearchFragment">
 
     <RelativeLayout
         android:id="@+id/halaman_awal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         android:layout_width="417dp"
         android:layout_height="737dp"
         android:background="#FFC736"
         android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,UselessParent">
 
-
-        <Button
-            android:id="@+id/buttonlogout"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="587dp"
-            android:background="@drawable/baseline_search_24" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="573dp"
-            app:srcCompat="@drawable/kotakputih" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -122,6 +100,29 @@
             android:text="Mau masak apa hari ini?"
             android:textColor="#ACACAC"
             android:textSize="10sp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="549dp"
+            android:background="#FAF4C2">
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search" />
+
+        </androidx.appcompat.widget.Toolbar>
 
 
     </RelativeLayout>

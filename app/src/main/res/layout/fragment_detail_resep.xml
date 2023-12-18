@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailResep">
+    tools:context=".View.Fragment.DetailResepFragment">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/ivGambarDetailResep"
         android:layout_width="470dp"
         android:layout_height="243dp"
         android:layout_marginTop="16dp"
@@ -39,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        app:layout_constraintTop_toBottomOf="@+id/ivGambarDetailResep" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvNamaMakananDetail"
         android:layout_width="302dp"
         android:layout_height="31dp"
         android:layout_marginTop="8dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tvDeskripsiMakanan"
         android:layout_width="335dp"
         android:layout_height="369dp"
         android:layout_marginBottom="32dp"
@@ -102,7 +102,7 @@ Sajikan dengan daun bawang, bawang goreng, sambal rawit dan jeruk nipis."
         app:layout_constraintStart_toStartOf="@+id/imageView21" />
 
     <Button
-        android:id="@+id/buttonsimpan"
+        android:id="@+id/buttonsimpanDetail"
         android:layout_width="166dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"

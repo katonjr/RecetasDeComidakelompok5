@@ -1,16 +1,15 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.View.Activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.FirebaseApp
+import com.example.recetasdecomida.R
 import com.google.firebase.auth.FirebaseAuth
 
-class signup : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
     lateinit var editEmail: EditText
     lateinit var editPassword: EditText
     lateinit var btnSignup: Button
@@ -35,7 +34,7 @@ class signup : AppCompatActivity() {
             firebase.createUserWithEmailAndPassword(
                 getEmail,getPassword
             ).addOnSuccessListener {
-                val intent = Intent(this,login::class.java)
+                val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }.addOnFailureListener {
                 Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
@@ -47,7 +46,7 @@ class signup : AppCompatActivity() {
 
 
         var loginn: Button =findViewById(R.id.buttonkelogin)
-        loginn.setOnClickListener({val intent = Intent(this, login::class.java)
+        loginn.setOnClickListener({val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)})
     }
 

@@ -1,7 +1,6 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.Model.Adapter
 
 import android.content.Context
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.recetasdecomida.Model.ModelClass.DataBahanModel
+import com.example.recetasdecomida.R
 
-class AdapterBahan (val bahan:List<DataBahan>, val konteks: Context): RecyclerView.Adapter<AdapterBahan.BahanViewHolder>(){
+class AdapterBahan (val bahan:List<DataBahanModel>, val konteks: Context): RecyclerView.Adapter<AdapterBahan.BahanViewHolder>(){
     class BahanViewHolder(baris: View): RecyclerView.ViewHolder(baris){
 
         val gambarbahan= baris.findViewById<ImageView>(R.id.bahan1)

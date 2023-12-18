@@ -1,13 +1,20 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.View.Activity
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.recetasdecomida.R
+import com.example.recetasdecomida.View.Fragment.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+
+
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bottomNavigationView: BottomNavigationView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

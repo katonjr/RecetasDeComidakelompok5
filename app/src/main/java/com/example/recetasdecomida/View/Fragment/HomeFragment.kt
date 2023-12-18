@@ -1,4 +1,4 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.View.Fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recetasdecomida.Model.Adapter.AdapterBahan
+import com.example.recetasdecomida.Model.Adapter.AdapterRekomendasi
+import com.example.recetasdecomida.R
+import com.example.recetasdecomida.listBahan
+import com.example.recetasdecomida.listRekomendasi
 
 class HomeFragment : Fragment() {
     private lateinit var recylerrekomendasi: RecyclerView

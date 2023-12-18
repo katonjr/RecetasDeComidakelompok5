@@ -1,4 +1,4 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.View.Fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.google.firebase.FirebaseApp
+import com.example.recetasdecomida.R
+import com.example.recetasdecomida.View.Activity.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -38,7 +39,7 @@ class AccountFragment : Fragment() {
         textView.text = firebaseApp.currentUser!!.email
         button.setOnClickListener {
             firebaseApp.signOut()
-            val keluar = Intent(requireContext(),login :: class.java)
+            val keluar = Intent(requireContext(), LoginActivity :: class.java)
             startActivity(keluar)
             requireActivity().finish()
         }

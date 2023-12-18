@@ -1,6 +1,6 @@
-package com.example.recetasdecomida
+package com.example.recetasdecomida.Model.ModelClass
 
-data class isiresep(
+data class IsiResepModel(
     val gambar: String = "",
     val namaMakanan: String = "Soto Ayam",
     val deskripsi: String = "Soto Ayam Enak Nikmat",
