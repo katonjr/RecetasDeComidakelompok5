@@ -15,6 +15,12 @@ class login : AppCompatActivity() {
     lateinit var btnLogin: Button
     lateinit var firebase: FirebaseAuth
 
+    override fun onStart() {
+        super.onStart()
+        //Membuat login sekali dan mengarahkan ke home
+        if (firebase.currentUser != null)
+            startActivity(Intent(this,MainActivity::class.java))
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
