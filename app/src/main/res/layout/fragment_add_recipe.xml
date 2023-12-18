@@ -1,64 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.Fragment.AddRecipeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/halaman_awal"
-        android:layout_width="417dp"
-        android:layout_height="737dp"
-        android:background="#FFC736"
-        android:clipToOutline="true"
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:src="@drawable/halaman_rating"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints,UselessParent">
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivMasukkanGambar"
+        android:layout_width="115dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/group_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
 
-        <TextView
-            android:id="@+id/catatan"
-            android:layout_width="338dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:lineSpacingExtra="-21sp"
-            android:text="Upload catatan resep pribadi"
-            android:textColor="#134096"
-            android:textSize="14sp"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvTempVuew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan \nGambar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMasukkanGambar"
+        app:layout_constraintEnd_toEndOf="@+id/ivMasukkanGambar"
+        app:layout_constraintStart_toStartOf="@+id/ivMasukkanGambar"
+        app:layout_constraintTop_toTopOf="@+id/ivMasukkanGambar" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Upload Resep Makanan"
-            tools:layout_editor_absoluteX="93dp"
-            tools:layout_editor_absoluteY="611dp" />
+    <EditText
+        android:id="@+id/etNamaResep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Masukkan Nama Resep"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMasukkanGambar" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="345dp"
-            android:layout_height="326dp"
-            android:src="@drawable/isii"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="320dp" />
+    <EditText
+        android:id="@+id/etDeskripsiResep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Masukkan Deskripsi"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etNamaResep"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNamaResep"
+        app:layout_constraintTop_toBottomOf="@+id/etNamaResep" />
 
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="350dp"
-            android:layout_height="171dp"
-            android:src="@drawable/kotakimage"
-            tools:layout_editor_absoluteX="33dp"
-            tools:layout_editor_absoluteY="124dp" />
+    <EditText
+        android:id="@+id/etBahanResep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Masukkan Bahan-Bahan"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etDeskripsiResep"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDeskripsiResep"
+        app:layout_constraintTop_toBottomOf="@+id/etDeskripsiResep" />
 
+    <Button
+        android:id="@+id/btnAddRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Simpan Resep Masakan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBahanResep" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
+    <ProgressBar
+        android:id="@+id/progressBarUpload"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddRecipe"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/btnAddRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddRecipe"
+        app:layout_constraintVertical_bias="0.29" />
+</androidx.constraintlayout.widget.ConstraintLayout>
