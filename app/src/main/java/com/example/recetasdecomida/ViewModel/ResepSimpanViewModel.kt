@@ -8,8 +8,8 @@ import com.example.recetasdecomida.listResep
 
 class ResepSimpanViewModel : ViewModel() {
 
-    var _listResep : MutableLiveData<List<ResepSimpanModel>> = MutableLiveData(listResep)
+    var _listResep : MutableLiveData<MutableList<ResepSimpanModel>> = MutableLiveData(listResep)
 
-    val getListResep: LiveData<List<ResepSimpanModel>>
+    val getListResep: LiveData<MutableList<ResepSimpanModel>>
         get() = _listResep
 }

@@ -46,7 +46,7 @@ class BookmarkFragment : Fragment() {
 
         resepViewModel.getListResep.observe(viewLifecycleOwner){newValue ->
             recylerResepSimpan.layoutManager = LinearLayoutManager(requireContext())
-            recylerResepSimpan.adapter = AdapterResepTersimpan(newValue,requireContext())
+            recylerResepSimpan.adapter = AdapterResepTersimpan(newValue,requireContext(),firestore,requireActivity().supportFragmentManager)
         }
 
     }
@@ -64,7 +64,7 @@ class BookmarkFragment : Fragment() {
                     )
                 }
 
-                resepViewModel._listResep.postValue(listResepSimpan)
+                resepViewModel._listResep.postValue(listResepSimpan.toMutableList())
 
 
             }
