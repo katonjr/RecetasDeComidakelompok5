@@ -1,130 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.Fragment.SearchFragment">
 
-    <RelativeLayout
-        android:id="@+id/halaman_awal"
-        android:layout_width="417dp"
-        android:layout_height="737dp"
-        android:background="#FFC736"
-        android:clipToOutline="true"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="411dp"
+        android:layout_height="730dp"
+        android:src="@drawable/halaman_rating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints,UselessParent">
+        app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Searching Resep"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="403dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="369dp"
-            app:srcCompat="@drawable/kotakbiru" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/kotakputih"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="403dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="205dp"
-            app:srcCompat="@drawable/kotakbiru" />
+    <Button
+        android:id="@+id/btnSearchResepMasakan"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:drawablePadding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/baseline_search_24"
+        app:iconPadding="0dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="403dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="287dp"
-            app:srcCompat="@drawable/kotakbiru" />
+    <EditText
+        android:id="@+id/etNamaResepSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Nama Resep"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineProvider="paddedBounds"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/btnSearchResepMasakan"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="403dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="453dp"
-            app:srcCompat="@drawable/kotakbiru" />
-
-        <TextView
-            android:id="@+id/carResep"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="false"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="30dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center_horizontal|center_vertical"
-            android:lineSpacingExtra="-21sp"
-            android:text="Cari Resep"
-            android:textColor="#134096"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/masakApa"
-            android:layout_width="238dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="false"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="125dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="30dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center_horizontal|center_vertical"
-            android:lineSpacingExtra="-21sp"
-            android:text="Mau masak apa hari ini?"
-            android:textColor="#ACACAC"
-            android:textSize="10sp" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="337dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="119dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="549dp"
-            android:background="#FAF4C2">
-
-            <SearchView
-                android:id="@+id/searchView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:iconifiedByDefault="false"
-                app:queryHint="Search" />
-
-        </androidx.appcompat.widget.Toolbar>
-
-
-    </RelativeLayout>
-
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerSearching"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,3 +51,5 @@ val listBahan:List<DataBahanModel> = listOf(
 )
 
 val listResep: MutableList<ResepSimpanModel> = mutableListOf()
+
+val listResepFilter: MutableList<ResepSimpanModel> = mutableListOf()
